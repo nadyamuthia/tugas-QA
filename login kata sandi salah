@@ -17,7 +17,7 @@ driver.find_element(By.XPATH, "/html/body/div/main/div/div/form/div[4]/button").
 time.sleep(10)
 
 #respon gagal login kata sandi salah
-response_login = driver.find_element(By.XPATH, "/html/body/div/main/div/div/form/div[2]/p").text
-assert "Kata Sandi Salah" in response_login
+response_login_sandi_salah = driver.find_element(By.XPATH, "/html/body/div/main/div/div/form/div[2]/p").text
+assert "Kata Sandi Salah" in response_login_sandi_salah
     
 driver.close() #brwoser ditutup
